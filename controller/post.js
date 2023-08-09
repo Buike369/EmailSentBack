@@ -16,15 +16,15 @@ const formSubmit = async (req, res) => {
             "email": email,
             "name": name,
             "phone": mobileNumber,
-            "address": residentialAddress,
+            "residentialAddress": residentialAddress,
             "Interest": interest,
             "city":city,
-            "local":localGovernment,
-            "state": state
+            "local_government_of_origin":localGovernment,
+            "state_of_origin": state
 
         }
 
-    console.log(externalData)
+    // console.log(externalData)
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
