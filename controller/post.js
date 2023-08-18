@@ -24,7 +24,7 @@ const formSubmit = async (req, res) => {
 
         }
 
-    console.log(externalData)
+    // console.log(externalData)
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
